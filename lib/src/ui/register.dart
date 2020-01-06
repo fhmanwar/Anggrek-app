@@ -64,8 +64,8 @@ class _RegisterState extends State<Register> with SingleTickerProviderStateMixin
           }else{
                 // _loginStatus = LoginStatus.signIn;
                 // _apiServices.savePref(token);
-              Toast.show("success", context, duration: Toast.LENGTH_SHORT, gravity:  Toast.BOTTOM);
-              // Navigate.gotoHome(context);
+              // Toast.show("success", context, duration: Toast.LENGTH_SHORT, gravity:  Toast.BOTTOM);
+              Navigate.gotoLogin(context);
           }
         });
       } else {

@@ -37,6 +37,7 @@ class Detail extends StatelessWidget {
                   SizedBox(
                     height: 70.0,
                   ),
+                  Padding(padding: new EdgeInsets.only(bottom: 50.0),),
                   Text(
                     anggreks.name,
                     style:TextStyle(
@@ -44,15 +45,23 @@ class Detail extends StatelessWidget {
                       fontWeight: FontWeight.bold
                     ),
                   ),
-                  Text("Price : Rp. ${anggreks.price}"),
+                  Text(
+                    "Price : ",
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22.0),
+                  ),
+                  Text(
+                    "Rp. ${anggreks.price}",
+                    style: TextStyle(fontStyle: FontStyle.italic),
+                  ),
                   Text(
                     "Deskripsi",
-                    style: TextStyle(fontWeight: FontWeight.bold),
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22.0),
                   ),
                   Text(
-                    "Types",
-                    style: TextStyle(fontWeight: FontWeight.bold),
+                    "${anggreks.desc}",
+                    style: TextStyle(fontStyle: FontStyle.italic),
                   ),
+                  Padding(padding: new EdgeInsets.only(bottom: 50.0),),
                   // Row(
                   //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   //   children: pokemon.type
